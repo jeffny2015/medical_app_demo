@@ -75,6 +75,62 @@ export default function Home() {
             
           </div>
 
+<!-- import { MedicalServicesService } from '@/services/medical-services.service';
+import { MedicalService } from '@/types';
+import MedicalServiceCard from '@/components/MedicalServiceCard';
+import ErrorState from '@/components/ErrorState';
+
+// Fetch featured medical services
+async function getFeaturedServices() {
+  try {
+    const services = await MedicalServicesService.getAll();
+    // Return the top 3 services with highest rating
+    return services
+      .sort((a, b) => b.rating - a.rating)
+      .slice(0, 3);
+  } catch (error) {
+    console.error('Error fetching featured services:', error);
+    return [];
+  }
+} -->
+
+<!-- export default async function Home() {
+  const featuredServices = await getFeaturedServices();
+  return (
+    <div className="space-y-8">
+      <section className="bg-blue-50 p-8 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-4">Welcome to Medical Marketplace</h1>
+          <p className="text-xl mb-6">
+            Find the best medical procedures and products for your healthcare needs
+          </p>
+          <Link href="/products" className="btn btn-primary">
+            Browse Products
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold mb-4">Featured Medical Services</h2>
+        {featuredServices.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredServices.map(service => (
+              <MedicalServiceCard key={service.id} service={service} />
+            ))}
+          </div>
+        ) : (
+          <div className="col-span-3 text-center py-8">
+            <ErrorState 
+              title="No featured services available" 
+              message="We couldn't find any featured services at the moment."
+              actionText="Browse All Services"
+              actionLink="/products"
+            />
+          </div>
+        )}
+      </section> -->
+
+
          
           
           <div className="absolute bottom-8 right-8 text-sm text-white">8888</div>
