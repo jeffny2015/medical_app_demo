@@ -47,7 +47,7 @@ const Footer = () => {
             <PrinterIcon className="h-6 w-6 text-gray-400" /> {/* Using PrinterIcon as a stand-in for Fax */}
             <div>
               <p className="text-sm text-gray-400">Fax</p>
-              <p className="text-white">+1-000-0000</p>
+              <p className="text-white">+8888-8888</p>
             </div>
           </div>
         </div>
