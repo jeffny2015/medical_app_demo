@@ -20,4 +20,6 @@ export interface Doctor {
   bio: string;
   certifications: string[];
   isAvailable: boolean;
+
+  // Doctor ranking and reviews must be coming from the blockchain
 } 
