@@ -110,7 +110,8 @@ The API documentation (Swagger) will be available at http://localhost:3001/api
 - Nest.js
 - TypeScript
 - Swagger for API documentation
-# MedDeFi-UI-Demo
-# MedDeFi-UI-Demo
-# MedDeFi-UI-Demo
-# MedDeFi-UI-Demo
+# Contract Repo
+https://github.com/mariocodecr/medical-SC
+## Current contract deployed in sepolia:
+* 0x02eeaafed8e20b5af184e8904c9091f45b3cbc065378a570997976123d685682
+* https://sepolia.voyager.online/contract/0x02eeaafed8e20b5af184e8904c9091f45b3cbc065378a570997976123d685682#readContract
