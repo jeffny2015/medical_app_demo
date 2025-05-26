@@ -4,3 +4,6 @@ export { DoctorsService } from './doctors.service';
 export { MedicalServicesService } from './medical-services.service';
 export { PatientsService } from './patients.service';
 export { PatientMedicalServicesService } from './patient-medical-services.service';
+export { UsersService } from './users.service';
+export { WalletsService } from './wallets.service';
+export { ContractsService } from './contracts.service';

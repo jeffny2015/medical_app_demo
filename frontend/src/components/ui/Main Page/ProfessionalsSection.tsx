@@ -6,22 +6,22 @@ const ProfessionalsSection = () => {
     {
       name: 'Dr. Jenny Doe',
       specialty: 'MBBS / Dip in Psychology',
-      imageUrl: '/path/to/image1.jpg', // Replace with actual image path
+      imageUrl: '/images/2148884880.jpg',
     },
     {
       name: 'Dr. John Smith', // Placeholder, will be Dr. Jenny Doe in the final version
       specialty: 'MBBS / Dip in Cardiology', // Placeholder
-      imageUrl: '/path/to/image2.jpg', // Replace with actual image path
+      imageUrl: '/images/2148984296.jpg',
     },
     {
       name: 'Dr. Jane Roe', // Placeholder
       specialty: 'MBBS / Dip in Neurology', // Placeholder
-      imageUrl: '/path/to/image3.jpg', // Replace with actual image path
+      imageUrl: '/images/2149152536.jpg',
     },
     {
       name: 'Dr. Richard Roe', // Placeholder
       specialty: 'MBBS / Dip in Pediatrics', // Placeholder
-      imageUrl: '/path/to/image4.jpg', // Replace with actual image path
+      imageUrl: '/images/2149355015.jpg',
     },
   ];
 
@@ -80,4 +80,4 @@ const ProfessionalsSection = () => {
   );
 };
 
-export default ProfessionalsSection; 
+export default ProfessionalsSection;

@@ -7,6 +7,7 @@ import { ClinicsService } from '@/services/clinics.service';
 import { Doctor, Clinic } from '@/types';
 import LoadingState from '@/components/LoadingState';
 import ErrorState from '@/components/ErrorState';
+import DoctorRatingComponent from '@/components/DoctorRatingComponent';
 
 // Type for availability display
 interface AvailabilityDisplay {
@@ -351,6 +352,12 @@ export default function SearchPage() {
                       )}
                     </div>
                   </div>
+
+                  {/* Doctor Rating Component - Blockchain Integration */}
+                  <DoctorRatingComponent 
+                    doctorId={selectedItem.id} 
+                    doctorName={`${selectedItem.firstName} ${selectedItem.lastName}`}
+                  />
                 </>
               ) : (
                 <>

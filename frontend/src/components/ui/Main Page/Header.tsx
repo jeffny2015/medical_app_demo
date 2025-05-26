@@ -1,4 +1,7 @@
+'use client';
 import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 // SVG Icons (simple placeholders)
 const MenuIcon = () => (
@@ -52,23 +55,34 @@ const DownloadAppButton = () => (
 
 
 const Header = () => {
-  const navItems = ['About us', 'Services', 'Doctors', 'Contact'];
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Products', href: '/products' },
+    { name: 'Users', href: '/users' },
+    { name: 'Wallets', href: '/wallets' },
+    { name: 'Contracts', href: '/contracts' },
+    { name: 'Services', href: '/health' },
+    { name: 'Doctors', href: '/search' },
+    { name: 'Contact', href: '/contact' }
+  ];
 
   return (
     <header className="bg-white shadow-md py-3 px-4 md:px-6 lg:px-8 rounded-3xl sticky top-4 z-50 ml-12 mr-12">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left Section: Logo and Nav */}
         <div className="flex items-center space-x-8">
-          <SalvaMedicLogo />
+          <Link href="/">
+            <SalvaMedicLogo />
+          </Link>
           <nav className="hidden md:flex items-center space-x-3 lg:space-x-5">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(' ', '-')}`}
+              <Link
+                key={item.name}
+                href={item.href}
                 className="px-3 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </nav>
         </div>
@@ -101,4 +115,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

@@ -165,3 +165,48 @@ export interface PatientMedicalService {
   createdAt: string | Date;
   updatedAt: string | Date;
 }
+
+// Backend Entity Types
+export enum UserType {
+  Patient = 'patient',
+  Doctor = 'doctor'
+}
+
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+  type: UserType;
+}
+
+export interface Wallet {
+  id: number;
+  user_id: number;
+  wallet_address: string;
+  user?: User;
+}
+
+export interface Contract {
+  id: number;
+  doctor_id: number;
+  contract_address: string;
+  created_at: Date;
+  doctor?: User;
+}
+
+// DTOs for API calls
+export interface CreateUserDto {
+  name: string;
+  email: string;
+  type: UserType;
+}
+
+export interface CreateWalletDto {
+  user_id: number;
+  wallet_address: string;
+}
+
+export interface CreateContractDto {
+  doctor_id: number;
+  contract_address: string;
+}
