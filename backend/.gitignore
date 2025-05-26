@@ -34,7 +34,11 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Environment variables
+# Database
+*.sqlite
+*.sqlite3
+
+# Environment
 .env
 .env.*
 !.env.example
